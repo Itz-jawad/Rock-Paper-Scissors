@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors.com</title>
+    <style>
+      h2{
+        text-align: center;
+        padding: 10px;
+        font-style: italic;
+        border: 2px solid green;
+      }
+      body{
+        background-image:url('background.png');
+      }
+      button{
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <h2>
+      Rock Paper Scissors
+    </h2>
+    <button onclick="
+    const random = Math.random();   
+    let save = ''; 
+    if (random >= 0 && random < 1/3) {
+      save = 'Rock';
+    } else if (random >= 1/3 && random < 2/3) {
+      save = 'Paper';
+    } else if (random >= 2/3 && random <1) {
+      save = 'Scissors';
+    }
+    let result = '';
+    if (save === 'Rock') {
+      result = 'Tie';
+    } else if (save === 'Paper') {
+      result = 'You Lose';
+    } else if (save === 'Scissors') {
+      result = 'You Win';
+    }
+    alert(`You choosed Rock and the computer choosed ${save} So ${result}`);
+    ">Rock <img src="rock.png" width="45px" height="45px"></button>
+    <button onclick="
+    const random = Math.random();   
+    let save = ''; 
+    if (random >= 0 && random < 1/3) {
+      save = 'Rock';
+    } else if (random >= 1/3 && random < 2/3) {
+      save = 'Paper';
+    } else if (random >= 2/3 && random <1) {
+      save = 'Scissors';
+    }
+    let result = '';
+    if (save === 'Rock') {
+      result = 'You Win';
+    } else if (save === 'Paper') {
+      result = 'Tie';
+    } else if (save === 'Scissors') {
+      result = 'You Lose';
+    }
+    alert(`You choosed Rock and the computer choosed ${save} So ${result}`);
+    ">Paper <img src="paper.png" width="45px" height="45px"></button>
+    <button onclick="
+    const random = Math.random();   
+    let save = ''; 
+    if (random >= 0 && random < 1/3) {
+      save = 'Rock';
+    } else if (random >= 1/3 && random < 2/3) {
+      save = 'Paper';
+    } else if (random >= 2/3 && random <1) {
+      save = 'Scissors';
+    }
+    let result = '';
+    if (save === 'Rock') {
+      result = 'You Lose';
+    } else if (save === 'Paper') {
+      result = 'You Win';
+    } else if (save === 'Scissors') {
+      result = 'Tie';
+    }
+    alert(`You choosed Rock and the computer choosed ${save} So ${result}`);
+    ">Scissor <img src="scissors.png" width="45px" height="45px"></button>
+  </body>
+  </center>
+</html>
